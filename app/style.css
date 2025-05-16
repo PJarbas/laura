@@ -1,0 +1,146 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stApp {
+    background-color: #ffffff; /* Fundo branco */
+}
+
+/* --- INÍCIO DAS NOVAS REGRAS PARA SIDEBAR --- */
+
+/* Define o fundo da sidebar para preto */
+section[data-testid="stSidebar"] {
+    background-color: #000000 !important; /* Preto puro. !important para garantir a sobreposição */
+    /* Você também pode usar um preto um pouco mais suave como #121212 ou #1E1E1E se preferir */
+}
+
+/* Define a cor do texto geral dentro da sidebar para verde iluminado */
+/* Esta regra tenta pegar a maioria dos textos. Ajustes podem ser necessários para elementos específicos. */
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] p,
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] li,
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] h1,
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] h2,
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] h3,
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] h4,
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] h5,
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] h6,
+section[data-testid="stSidebar"] label[data-testid="stWidgetLabel"] > div > div:first-child,
+section[data-testid="stSidebar"] div[data-testid="stText"], /* Para st.text */
+section[data-testid="stSidebar"] .stSubheader /* Para st.subheader */ {
+    color: #ffffff !important; 
+}
+
+/* Se você tiver links na sidebar e quiser uma cor específica para eles */
+section[data-testid="stSidebar"] a {
+    color: #ffffff!important; /* Um verde um pouco mais claro ou diferente para links */
+}
+
+/* Opcional: Se a imagem na sidebar tiver fundo transparente e você quiser que ela se destaque */
+section[data-testid="stSidebar"] .stImage img {
+    /* Se a imagem tiver fundo branco/transparente e ficar ruim no fundo preto,
+       você pode querer adicionar uma borda ou um fundo sutil aqui. Ex: */
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* border: 1px solid #39FF14; */
+    /* padding: 5px; */
+    /* border-radius: 5px; */
+}
+
+
+/* --- FIM DAS NOVAS REGRAS PARA SIDEBAR --- */
+
+
+.stButton>button {
+    background-color: #0078D4; /* Azul Microsoft Moderno */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 24px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #005a9e; /* Azul mais escuro no hover */
+}
+
+.stTextInput>div>div>input,
+.stTextArea>div>div>textarea,
+.stSelectbox>div>div>div, /* Seletor do selectbox */
+.stNumberInput>div>div>input {
+    border-radius: 5px;
+    border: 1px solid #ced4da; /* Borda sutil */
+    padding: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stTextInput>div>div>input:focus,
+.stTextArea>div>div>textarea:focus,
+.stSelectbox>div>div>div:focus-within, /* Foco no contêiner do selectbox */
+.stNumberInput>div>div>input:focus {
+    border-color: #0078D4;
+    box-shadow: 0 0 0 0.2rem rgba(0, 120, 212, 0.25);
+}
+
+/* Título principal da página (H1) - mantendo o estilo de nota verde que você tinha */
+h1 {
+    background-color: #e6ffed;
+    color: #1e4620;
+    padding: 15px 20px;
+    border-left: 6px solid #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+/* Demais títulos H2, H3 no conteúdo principal */
+h2, h3 {
+    color: #2c3e50; /* Cor escura para títulos */
+}
+
+
+/* Destacar os rótulos (títulos) dos campos de input (FORA DA SIDEBAR) */
+:not(section[data-testid="stSidebar"]) > label[data-testid="stWidgetLabel"] > div > div:first-child {
+    font-weight: bold !important;
+}
+
+/* Ocultar a barra de decoração superior que contém o menu hamburger */
+div[data-testid="stDecoration"] {
+    display: none;
+}
+
+/* Ocultar o rodapé "Made with Streamlit" */
+footer {
+    display: none;
+}
+
+.response-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    margin-top: 25px;
+    border-left: 5px solid #0078D4;
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Removido .sidebar-content pois estamos usando seletores mais específicos do Streamlit */
+/* .sidebar-content {
+    padding: 15px;
+} */
+
+/* A regra para a imagem na sidebar já foi tratada acima, mas se precisar de ajustes específicos: */
+/*
+.sidebar-content .stImage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+*/
