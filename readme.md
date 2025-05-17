@@ -78,39 +78,25 @@ Laura aspira ser a ferramenta essencial para qualquer profissional de tecnologia
 
 ## 🛠️ Como Usar/Instalar
 
-**(✍️ PREENCHA ESTA SEÇÃO COM AS INSTRUÇÕES ESPECÍFICAS DO SEU PROJETO ✍️)**
-
-*   *Se for uma aplicação web hospedada, basta fornecer o link:*
-    Você pode acessar Laura em: [Link para a Aplicação Web]
-
-*   *Se for um projeto para rodar localmente (para desenvolvedores ou testes):*
+*   *Para rodar localmente*
     1.  Clone o repositório:
         ```bash
-        git clone https://github.com/seu-usuario/laura.git
+        git clone https://github.com/PJarbas/laura.git
         ```
-    2.  Navegue até o diretório do projeto:
+    
+    2.  Instale as dependências (Python):
         ```bash
-        cd laura
-        ```
-    3.  Instale as dependências (ex: Node.js, Python):
-        ```bash
-        # Exemplo para Node.js
-        npm install
-
-        # Exemplo para Python
         pip install -r requirements.txt
         ```
-    4.  Configure as variáveis de ambiente (API Keys para LLM, Google Search, etc.). Veja o arquivo `.env.example`.
+    
+    3.  Configure as variáveis de ambiente (API Keys para Google Gemini). Veja o arquivo `.env.example`.
+
     5.  Execute a aplicação:
         ```bash
-        # Exemplo
-        npm start
-        # ou
-        python app.py
+        cd app/
+        streamlit run app.py
         ```
     6.  Acesse a aplicação em seu navegador (geralmente `http://localhost:PORTA`).
-
-*(Ajuste as instruções conforme a tecnologia e o setup do seu projeto.)*
 
 ## 🤝 Contribuição
 
