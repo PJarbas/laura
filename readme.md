@@ -59,8 +59,9 @@ Laura foi projetada para ser sua guia, oferecendo:
 **Fluxo da aplicação:** No dashboard principal o usuário fornece as informações como nome, nível de experiência, cargo, área de interesse, habilidades e tempo de estudo -> Em seguida o backend envia a requisição para o modelo de IA que já possui o prompt de sistema definido e a tool (Google Search) para obter dados atuais -> Assim IA processa e gera o plano -> Que é exibido para o usuário.
 
 ## 🚀 Demonstração
-https://youtu.be/hoQALAtRkp0
-![](icon/demo.gif)
+
+[![Vídeo Demonstração](app/icon/demo.png)](https://youtu.be/hoQALAtRkp0)
+
 
 ## 🚀 Impacto
 
