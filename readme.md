@@ -60,6 +60,8 @@ Laura foi projetada para ser sua guia, oferecendo:
 
 ## 🚀 Demonstração
 
+![](icon/demo.gif)
+
 ## 🚀 Impacto
 
 O impacto de Laura transcende a simples entrega de informações. Nosso objetivo é:
